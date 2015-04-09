@@ -1,6 +1,0 @@
-<!-- ABOUT -->
-<section class="about" id="about">
-<h2 class="section-title"><%= @t('sections.about.title')%></h2>
-<p itemprop="description"><%- @t('sections.about.text')%></p>
-</section>
-<!-- / ABOUT -->

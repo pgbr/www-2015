@@ -100,6 +100,10 @@
         </li>
       
       
+        <li class="nav-item">
+          <a href="#schedule" title="Agenda" class="nav-link">Agenda</a>
+        </li>
+      
       
         <!--li class="nav-item">
           <a href="#pastEvents" title="Eventos anteriores" class="nav-link">Eventos anteriores</a>
@@ -232,7 +236,7 @@
           30/09/2015 - Publicação das palestras aprovadas
       </li>
     
-      <li >
+      <li class="done">
           10/10/2015 - Publicação da agenda oficial
       </li>
     
@@ -251,40 +255,15 @@
 
   <ul class="speakers-list">
   
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/alvaro_herrera.png" alt="Álvaro Herrera" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Álvaro Herrera</span>
-          <span class="speakers-company">2ndQuadrant</span>
-          <span class="speakers-link">
-            
-            
-              <a href="http://www.twitter.com/alvherre" title="Twitter @alvherre" class="fa fa-twitter-square"></a>
-            
-            
-              <a href="http://www.github.com/alvherre" title="Github @alvherre" class="fa fa-github-square"></a>
-            
-            
-              <a href="https://www.linkedin.com/in/alvherre" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
+    
   
-          
-          <h3 class="speech-title">
-            
-            <span> A JSON representation of DDL</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Álvaro começou a escrever código para o PostgreSQL em 2002 e nunca mais parou, contribuiu com features e bug fixes para todos os releases desde a 7.2: shared row locking, o autovacuum daemon, background workers, índices BRIN, e muito mais.<br> Ele é atualmente commiter do PostgreSQL e Major Developer trabalhando para a 2ndQuadrant, uma organização que presta serviços de PostgreSQL no mundo todo.</p>
-      </li>
+    
   
+    
+  
+    
+  
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
@@ -308,7 +287,6 @@
   
           
           <h3 class="speech-title">
-            
             <span> Author's view on Non-structured Data in PostgreSQL</span>
           </h3>
           
@@ -316,7 +294,9 @@
 
         <p class="speakers-bio">Teodor é graduado no departamento de física da Universidade Estadual de Moscou. Tem trabalhado no desenvolvimento do PostgreSQL desde 2000. <br> Suas principais contribuições para o PostgreSQL são os frameworks de GIN e GiST, ambos os módulos contrib populares e vários hacks. Ele é um membro ativo da comunidade PostgreSQL russo.</p>
       </li>
+      
   
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
@@ -344,149 +324,20 @@
   
           
           <h3 class="speech-title">
-            
             <span> Author's view on Non-structured Data in PostgreSQL</span>
           </h3>
           
         </h3>
 
-        <p class="speakers-bio">Oleg Bartunov está envolvido no desenvolvimento do PostgreSQL desde 1996 (ele introduziu o suporte a localização). É Major Developer do PostgreSQL e membro do PGDG. <br> Junto com seu colega Teodor Sigaev desenvolveu a infraestrutura que permite a implentação de índices com método de acesso GiST, GIN, SP-GiST, facilidades full-text search embutidas no PostgreSQL (mais conhecido como tsearch2) e muitas extenções populares como intarray, ltree, hstore, pg_trgm. Sua última contribuição foi o armazenamento binário para estruturas aninhadas, que permite a implementação do hstore e tipos de dados jsonb eficientes.</p>
+        <p class="speakers-bio">Oleg Bartunov está envolvido no desenvolvimento do PostgreSQL desde 1996 (ele introduziu o suporte a localização). É Major Developer do PostgreSQL e membro do PGDG. Junto com seu colega Teodor Sigaev desenvolveu a infraestrutura que permite a implentação de índices com método de acesso GiST, GIN, SP-GiST, facilidades full-text search embutidas no PostgreSQL (mais conhecido como tsearch2) e muitas extenções populares como intarray, ltree, hstore, pg_trgm. Sua última contribuição foi o armazenamento binário para estruturas aninhadas, que permite a implementação do hstore e tipos de dados jsonb eficientes</p>
       </li>
+      
   
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/martin_marques.jpg" alt="Martín Marqués" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Martín Marqués</span>
-          <span class="speakers-company">2ndQuadrant</span>
-          <span class="speakers-link">
-            
-            
-              <a href="http://www.twitter.com/martinarmarques" title="Twitter @martinarmarques" class="fa fa-twitter-square"></a>
-            
-            
-            
-              <a href="https://ar.linkedin.com/pub/martín-marqués/31/721/b6b/en" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
+    
   
-          
-          <h3 class="speech-title">
-            
-            <span> BDR for DBAs</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">BDR stands for Bi-Directional Replication, but don’t get confused, it’s not magic. I’m going to go through the way bdr replicates, what you can do and what you can’t (and why they are forbidden). We’ll see how special objects like sequences are treated and how following a few rules can give you a stable geographical replication system. And in the end, we’ll show how to start up a bdr cluster, and run some DDL and DML statements.</p>
-      </li>
+    
   
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/fabio_telles.jpg" alt="Fábio Telles Rodriguez" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Fábio Telles Rodriguez</span>
-          <span class="speakers-company">Timbira</span>
-          <span class="speakers-link">
-            
-              <a href="http://savepoint.blog.br" title="Website" class="fa fa-globe"></a>
-            
-            
-              <a href="http://www.twitter.com/telles" title="Twitter @telles" class="fa fa-twitter-square"></a>
-            
-            
-            
-              <a href="https://br.linkedin.com/in/telles" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> PostgreSQL Rock Star</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">10 dicas simples e efetivas para você se tornar um astro do PostgreSQL sem precisar gastar rios de dinheiro com certificações e ainda se divertir no caminho. Cervejas por conta da plateia</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/dickson_guedes.jpg" alt="Dickson S. Guedes" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Dickson S. Guedes</span>
-          <span class="speakers-company">Timbira</span>
-          <span class="speakers-link">
-            
-              <a href="http://guedesoft.net" title="Website" class="fa fa-globe"></a>
-            
-            
-              <a href="http://www.twitter.com/guediz" title="Twitter @guediz" class="fa fa-twitter-square"></a>
-            
-            
-            
-              <a href="https://br.linkedin.com/in/dicksonguedes" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> Curiosidades sobre o PostgreSQL que você (talvez) não sabia e se sabia vale a pena lembrar</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Uma palestra que passeia por funcionalidades do PostgreSQL que muitos desconhecem, esqueceram que existe, ou se conhecem não blogaram muito sobre o assunto.</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/euler_taveira.jpg" alt="Euler Taveira" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Euler Taveira</span>
-          <span class="speakers-company">Timbira</span>
-          <span class="speakers-link">
-            
-              <a href="http://eulerto.blogspot.com.br" title="Website" class="fa fa-globe"></a>
-            
-            
-              <a href="http://www.twitter.com/eulerto" title="Twitter @eulerto" class="fa fa-twitter-square"></a>
-            
-            
-            
-              <a href="http://br.linkedin.com/in/eulerto" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> Big Data e PostgreSQL</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">O volume de dados disponível em formato digital cresce exponencialmente. O PostgreSQL está preparado para tal demanda? Apesar de não ser muito difundido, o PostgreSQL é utilizado para data warehouse a alguns anos (sem falar nos vários forks do PostgreSQL com foco em big data).</p>
-      </li>
-  
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
@@ -514,7 +365,6 @@
   
           
           <h3 class="speech-title">
-            
             <span> Como posso colaborar com o PostgreSQL?</span>
           </h3>
           
@@ -522,7 +372,281 @@
 
         <p class="speakers-bio">O PostgreSQL é um projeto de software livre mantido por uma comunidade ampla, formada por pessoas de vários lugares do mundo. A intenção dessa apresentação é exemplificar as diversas formas possíves de colaboração e como você pode iniciar hoje mesmo a fazer parte desta comunidade e fazer com que este projeto nunca acabe. Engajamento é a palavra-chave para o sucesso do PostgreSQL e de qualquer projeto. Envolva-se, engaje-se, o PostgreSQL precisa de você!</p>
       </li>
+      
   
+    
+  
+    
+  
+    
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/fabio_telles.jpg" alt="Fábio Telles Rodriguez" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Fábio Telles Rodriguez</span>
+          <span class="speakers-company">Timbira</span>
+          <span class="speakers-link">
+            
+              <a href="http://savepoint.blog.br" title="Website" class="fa fa-globe"></a>
+            
+            
+              <a href="http://www.twitter.com/telles" title="Twitter @telles" class="fa fa-twitter-square"></a>
+            
+            
+            
+              <a href="https://br.linkedin.com/in/telles" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> PostgreSQL Rock Star</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">10 dicas simples e efetivas para você se tornar um astro do PostgreSQL sem precisar gastar rios de dinheiro com certificações e ainda se divertir no caminho. Cervejas por conta da plateia</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/luis_bueno.jpg" alt="Luis Fernando Bueno" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Luis Fernando Bueno</span>
+          <span class="speakers-company">CENSIPAM</span>
+          <span class="speakers-link">
+            
+            
+            
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> PostGIS Raster</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">Possui mestrado em Engenharia de Computação (UERJ). É Analista em Ciência & Tecnologia do Centro Gestor e Operacional do Sistema de Proteção da Amazônia - CENSIPAM, atuando na Divisão de Banco de Dados do Centro Regional de Porto Velho e desenvolvendo trabalhos nas áreas de Banco de Dados Espaciais, Infraestrutura para Dados Espaciais e Geoprocessamento. É aluno do Programa de Pós-Graduação em Geografia (UFPR), matriculada no curso de Doutorado em Geografia</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/euler_taveira.jpg" alt="Euler Taveira" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Euler Taveira</span>
+          <span class="speakers-company">Timbira</span>
+          <span class="speakers-link">
+            
+              <a href="http://eulerto.blogspot.com.br" title="Website" class="fa fa-globe"></a>
+            
+            
+              <a href="http://www.twitter.com/eulerto" title="Twitter @eulerto" class="fa fa-twitter-square"></a>
+            
+            
+            
+              <a href="http://br.linkedin.com/in/eulerto" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> Big Data e PostgreSQL</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">O volume de dados disponível em formato digital cresce exponencialmente. O PostgreSQL está preparado para tal demanda? Apesar de não ser muito difundido, o PostgreSQL é utilizado para data warehouse a alguns anos (sem falar nos vários forks do PostgreSQL com foco em big data)</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/sebastian_webber.jpg" alt="Sebastian Webber" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Sebastian Webber</span>
+          <span class="speakers-company">LM2 Consulting</span>
+          <span class="speakers-link">
+            
+              <a href="http://swebber.me" title="Website" class="fa fa-globe"></a>
+            
+            
+              <a href="http://www.twitter.com/sebastian_swc" title="Twitter @sebastian_swc" class="fa fa-twitter-square"></a>
+            
+            
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> Fique ninja na codificação de caracteres</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">Domine as artes ocultas da codificação e termine com o sofrimento de sua aplicação</p>
+      </li>
+      
+  
+    
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/fabiano_dias.jpg" alt="Fabiano Machado Dias" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Fabiano Machado Dias</span>
+          <span class="speakers-company">Wolak Tecnologia</span>
+          <span class="speakers-link">
+            
+            
+            
+            
+              <a href="https://www.linkedin.com/in/fabianomachadodias" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> Migração de Oracle para PostgreSQL - Indo além do SGBD</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">Estudo de caso de uma migração de Oracle para PostgreSQL em ambiente de alta disponibilidade.Durante o projeto foram avaliadas diversas formas de realizar a migração, devido a complexidade e volumetria do ambiente, a ferramenta escolhida foi o Ora2Pg, esta palestra tem como objetivo demonstrar como realizar uma migração não só de um banco de dados, mas de toda uma cultura que se forma dentro de uma organização</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/martin_marques.jpg" alt="Martín Marqués" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Martín Marqués</span>
+          <span class="speakers-company">2ndQuadrant</span>
+          <span class="speakers-link">
+            
+            
+              <a href="http://www.twitter.com/martinarmarques" title="Twitter @martinarmarques" class="fa fa-twitter-square"></a>
+            
+            
+            
+              <a href="https://ar.linkedin.com/pub/martín-marqués/31/721/b6b/en" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> BDR for DBAs</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">BDR stands for Bi-Directional Replication, but don’t get confused, it’s not magic. I’m going to go through the way bdr replicates, what you can do and what you can’t (and why they are forbidden). We’ll see how special objects like sequences are treated and how following a few rules can give you a stable geographical replication system and in the end, we’ll show how to start up a bdr cluster, and run some DDL and DML statements</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/alvaro_herrera.png" alt="Álvaro Herrera" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Álvaro Herrera</span>
+          <span class="speakers-company">2ndQuadrant</span>
+          <span class="speakers-link">
+            
+            
+              <a href="http://www.twitter.com/alvherre" title="Twitter @alvherre" class="fa fa-twitter-square"></a>
+            
+            
+              <a href="http://www.github.com/alvherre" title="Github @alvherre" class="fa fa-github-square"></a>
+            
+            
+              <a href="https://www.linkedin.com/in/alvherre" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> A JSON representation of DDL</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">Álvaro começou a escrever código para o PostgreSQL em 2002 e nunca mais parou, contribuiu com features e bug fixes para todos os releases desde a 7.2: shared row locking, o autovacuum daemon, background workers, índices BRIN, e muito mais. Ele é atualmente commiter do PostgreSQL e Major Developer trabalhando para 2ndQuadrant, uma organização que presta serviços de PostgreSQL no mundo todo</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/martin_marques.jpg" alt="Martín Marqués" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Martín Marqués</span>
+          <span class="speakers-company">2ndQuadrant</span>
+          <span class="speakers-link">
+            
+            
+              <a href="http://www.twitter.com/martinarmarques" title="Twitter @martinarmarques" class="fa fa-twitter-square"></a>
+            
+            
+            
+              <a href="https://ar.linkedin.com/pub/martín-marqués/31/721/b6b/en" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> PostgreSQL backups strategies for real environments</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">This talk is about postgres backup strategies in the real world, and how to choose the best fit for the environment we want to protect</p>
+      </li>
+      
+  
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
@@ -550,169 +674,16 @@
   
           
           <h3 class="speech-title">
-            
             <span> Como o PostgreSQL ajuda a uMov.me a crescer</span>
           </h3>
           
         </h3>
 
-        <p class="speakers-bio">Nesta apresentação iremos mostrar como o PostgreSQL ajuda a suportar um ambiente 24x7 com mais de 100.000 usuários e parceiros em todo Brasil e em expansão para América Latina. Serão abordadas técnicas e ferramentas utilizadas em um ambiente na Amazon, tais como replicação(nativa e lógica), tunning, vacuum, freeze, repack, reindex, monitoramento e sandbox para homologação com +700GB criado em minutos. Serão abordadas táticas para deploy em db relacional com downtime mínimo.</p>
+        <p class="speakers-bio">Nesta apresentação iremos mostrar como o PostgreSQL ajuda a suportar um ambiente 24x7 com mais de 100.000 usuários e parceiros em todo Brasil e em expansão para América Latina. Serão abordadas técnicas e ferramentas utilizadas em um ambiente na Amazon, tais como replicação(nativa e lógica), tunning, vacuum, freeze, repack, reindex, monitoramento e sandbox para homologação com +700GB criado em minutos. Serão abordadas táticas para deploy em db relacional com downtime mínimo</p>
       </li>
+      
   
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/jaime_casanova.jpg" alt="Jaime Casanova" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Jaime Casanova</span>
-          <span class="speakers-company">2ndQuadrant</span>
-          <span class="speakers-link">
-            
-            
-              <a href="http://www.twitter.com/systemguards" title="Twitter @systemguards" class="fa fa-twitter-square"></a>
-            
-            
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> HA PostgreSQL cluster with repmgr and pgbouncer</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">A real-world example of how to configure HA for PostgreSQL using repmgr for failure detection and failover and pgbouncer to isolate the old master. This example is based in a real case we have in Ecuador that has survived some network outages and other kind of not expected failures</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/fabiano_dias.jpg" alt="Fabiano Machado Dias" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Fabiano Machado Dias</span>
-          <span class="speakers-company">Wolak Tecnologia</span>
-          <span class="speakers-link">
-            
-            
-            
-            
-              <a href="https://www.linkedin.com/in/fabianomachadodias" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> Migração de Oracle para PostgreSQL - Indo além do SGBD</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Estudo de caso de uma migração de Oracle para PostgreSQL em ambiente de alta disponibilidade.Durante o projeto foram avaliadas diversas formas de realizar a migração, devido a complexidade e volumetria do ambiente, a ferramenta escolhida foi o Ora2Pg, esta palestra tem como objetivo demonstrar como realizar uma migração não só de um banco de dados, mas de toda uma cultura que se forma dentro de uma organização.</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/fernando_ike.jpg" alt="Fernando Ike" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Fernando Ike</span>
-          <span class="speakers-company">Timbira</span>
-          <span class="speakers-link">
-            
-              <a href="http://www.fernandoike.com" title="Website" class="fa fa-globe"></a>
-            
-            
-              <a href="http://www.twitter.com/fernandoike" title="Twitter @fernandoike" class="fa fa-twitter-square"></a>
-            
-            
-            
-              <a href="https://www.linkedin.com/in/fernandoike" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> Caiu a lista do PostgreSQL Brasil! E agora?</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Apresentação da infraestrutura do PostgreSQL Brasil, as principais mudanças nos últimos anos e a motivação de mudar várias coisas (Invasão dos sites...)</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/luis_bueno.jpg" alt="Luis Fernando Bueno" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Luis Fernando Bueno</span>
-          <span class="speakers-company">CENSIPAM</span>
-          <span class="speakers-link">
-            
-            
-            
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> PostGIS Raster</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Possui mestrado em Engenharia de Computação (UERJ). É Analista em Ciência & Tecnologia do Centro Gestor e Operacional do Sistema de Proteção da Amazônia - CENSIPAM, atuando na Divisão de Banco de Dados do Centro Regional de Porto Velho e desenvolvendo trabalhos nas áreas de Banco de Dados Espaciais, Infraestrutura para Dados Espaciais e Geoprocessamento. É aluno do Programa de Pós-Graduação em Geografia (UFPR), matriculada no curso de Doutorado em Geografia.</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/sebastian_webber.jpg" alt="Sebastian Webber" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Sebastian Webber</span>
-          <span class="speakers-company">LM2 Consulting</span>
-          <span class="speakers-link">
-            
-              <a href="http://swebber.me" title="Website" class="fa fa-globe"></a>
-            
-            
-              <a href="http://www.twitter.com/sebastian_swc" title="Twitter @sebastian_swc" class="fa fa-twitter-square"></a>
-            
-            
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> Fique ninja na codificação de caracteres</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Domine as artes ocultas da codificação e termine com o sofrimento de sua aplicação</p>
-      </li>
-  
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
@@ -736,27 +707,30 @@
   
           
           <h3 class="speech-title">
-            
             <span> Escalabilidade, Sharding, Paralelismo e Bigdata com PostgreSQL? Yes, we can!</span>
           </h3>
           
         </h3>
 
-        <p class="speakers-bio">Entenda as diversas possibilidades para adequar o PostgreSQL a outras demandas além do OLTP tradicional.</p>
+        <p class="speakers-bio">Entenda as diversas possibilidades para adequar o PostgreSQL a outras demandas além do OLTP tradicional</p>
       </li>
+      
   
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/anderson_abreu.jpg" alt="Anderson Abreu" itemprop="image" />
+            <img class="photo" src="./img/speakers/jaime_casanova.jpg" alt="Jaime Casanova" itemprop="image" />
           </span>
         
 
         <h3 class="speakers-card">
-          <span class="speakers-name">Anderson Abreu</span>
-          <span class="speakers-company">Sysmanager</span>
+          <span class="speakers-name">Jaime Casanova</span>
+          <span class="speakers-company">2ndQuadrant</span>
           <span class="speakers-link">
             
+            
+              <a href="http://www.twitter.com/systemguards" title="Twitter @systemguards" class="fa fa-twitter-square"></a>
             
             
             
@@ -764,75 +738,16 @@
   
           
           <h3 class="speech-title">
-            
-            <span> Vamos baratear o custo com banco de dados? Migração para PostgreSQL de Oracle, MySQL, ZIM e MS SQL Server</span>
+            <span> HA PostgreSQL cluster with repmgr and pgbouncer</span>
           </h3>
           
         </h3>
 
-        <p class="speakers-bio">A atual situação econômica-financeira do país é ideal para que os gestores de empresas públicas e privadas realizem uma revisão dos elevados custos com licenciamento de banco de dados. A palestra possibilitará ao convidado um momento de aprendizagem sobre as vantagens em utilizar o PostgreSQL como alternativa para os bancos de dados comerciais provando que aplicações de missão crítica podem ser executadas nessa plataforma. Serão apresentadas algumas ferramentas utilizadas para a migração de dados, completando com alguns cases de sucesso.</p>
+        <p class="speakers-bio">A real-world example of how to configure HA for PostgreSQL using repmgr for failure detection and failover and pgbouncer to isolate the old master. This example is based in a real case we have in Ecuador that has survived some network outages and other kind of not expected failures</p>
       </li>
+      
   
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/diogo_rubert.jpg" alt="Diogo Luis Von Grafen Rubert" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Diogo Luis Von Grafen Rubert</span>
-          <span class="speakers-company">Logica Informática Ltda</span>
-          <span class="speakers-link">
-            
-            
-            
-            
-              <a href="https://br.linkedin.com/pub/diogo-l-v-g-rubert/a5/288/7" title="Linkedin" class="fa fa-linkedin-square"></a>
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> O uso de funções de similaridade e distância entre strings adaptadas ao português brasileiro</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">As buscas que utilizam operadores relacionais são limitadas quando ocorrem erros de digitação ou quando a base de dados está inconsistente. Para suprir esta deficiência, alguns sistemas possuem funções que permitem fazer buscas baseadas na similaridade das strings, por exemplo, as buscas baseadas em algoritmos fonéticos como o Soundex e o Metaphone.</p>
-      </li>
-  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        
-          <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/juliano_atanazio.jpg" alt="Juliano Atanazio" itemprop="image" />
-          </span>
-        
-
-        <h3 class="speakers-card">
-          <span class="speakers-name">Juliano Atanazio</span>
-          <span class="speakers-company">SERPRO</span>
-          <span class="speakers-link">
-            
-              <a href="http://juliano777.worpress.com" title="Website" class="fa fa-globe"></a>
-            
-            
-            
-            
-          </span>
-  
-          
-          <h3 class="speech-title">
-            
-            <span> PostgreSQL + Python = Power!</span>
-          </h3>
-          
-        </h3>
-
-        <p class="speakers-bio">Trabalhando com Python e PostgreSQL, produtividade, como interagem e dicas.</p>
-      </li>
-  
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
@@ -858,53 +773,647 @@
   
           
           <h3 class="speech-title">
-            
             <span> Administrando servidores PostgreSQL com Puppet</span>
           </h3>
           
         </h3>
 
-        <p class="speakers-bio">Graças à extensibilidade do Puppet, via módulos e plugins, é possível também facilitar imensamente o gerenciamento de bancos PostgreSQL.</p>
+        <p class="speakers-bio">Graças à extensibilidade do Puppet, via módulos e plugins, é possível também facilitar imensamente o gerenciamento de bancos PostgreSQL</p>
       </li>
+      
   
+    
       <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
-            <img class="photo" src="./img/speakers/martin_marques.jpg" alt="Martín Marqués" itemprop="image" />
+            <img class="photo" src="./img/speakers/dickson_guedes.jpg" alt="Dickson S. Guedes" itemprop="image" />
           </span>
         
 
         <h3 class="speakers-card">
-          <span class="speakers-name">Martín Marqués</span>
-          <span class="speakers-company">2ndQuadrant</span>
+          <span class="speakers-name">Dickson S. Guedes</span>
+          <span class="speakers-company">Timbira</span>
           <span class="speakers-link">
             
-            
-              <a href="http://www.twitter.com/martinarmarques" title="Twitter @martinarmarques" class="fa fa-twitter-square"></a>
-            
+              <a href="http://guedesoft.net" title="Website" class="fa fa-globe"></a>
             
             
-              <a href="https://ar.linkedin.com/pub/martín-marqués/31/721/b6b/en" title="Linkedin" class="fa fa-linkedin-square"></a>
+              <a href="http://www.twitter.com/guediz" title="Twitter @guediz" class="fa fa-twitter-square"></a>
+            
+            
+            
+              <a href="https://br.linkedin.com/in/dicksonguedes" title="Linkedin" class="fa fa-linkedin-square"></a>
             
           </span>
   
           
           <h3 class="speech-title">
-            
-            <span> PostgreSQL backups strategies for real environments</span>
+            <span> Curiosidades sobre o PostgreSQL que você (talvez) não sabia e se sabia vale a pena lembrar</span>
           </h3>
           
         </h3>
 
-        <p class="speakers-bio">This talk is about postgres backup strategies in the real world, and how to choose the best fit for the environment we want to protect.</p>
+        <p class="speakers-bio">Uma palestra que passeia por funcionalidades do PostgreSQL que muitos desconhecem, esqueceram que existe, ou se conhecem não blogaram muito sobre o assunto</p>
       </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/juliano_atanazio.jpg" alt="Juliano Atanazio" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Juliano Atanazio</span>
+          <span class="speakers-company">SERPRO</span>
+          <span class="speakers-link">
+            
+              <a href="http://juliano777.worpress.com" title="Website" class="fa fa-globe"></a>
+            
+            
+            
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> PostgreSQL + Python = Power!</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">Trabalhando com Python e PostgreSQL, produtividade, como interagem e dicas</p>
+      </li>
+      
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/anderson_abreu.jpg" alt="Anderson Abreu" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Anderson Abreu</span>
+          <span class="speakers-company">Sysmanager</span>
+          <span class="speakers-link">
+            
+            
+            
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> Vamos baratear o custo com banco de dados? Migração para PostgreSQL de Oracle, MySQL, ZIM e MS SQL Server</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">A atual situação econômica-financeira do país é ideal para que os gestores de empresas públicas e privadas realizem uma revisão dos elevados custos com licenciamento de banco de dados. A palestra possibilitará ao convidado um momento de aprendizagem sobre as vantagens em utilizar o PostgreSQL como alternativa para os bancos de dados comerciais provando que aplicações de missão crítica podem ser executadas nessa plataforma. Serão apresentadas algumas ferramentas utilizadas para a migração de dados, completando com alguns cases de sucesso</p>
+      </li>
+      
+  
+    
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/fernando_ike.jpg" alt="Fernando Ike" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Fernando Ike</span>
+          <span class="speakers-company">Timbira</span>
+          <span class="speakers-link">
+            
+              <a href="http://www.fernandoike.com" title="Website" class="fa fa-globe"></a>
+            
+            
+              <a href="http://www.twitter.com/fernandoike" title="Twitter @fernandoike" class="fa fa-twitter-square"></a>
+            
+            
+            
+              <a href="https://www.linkedin.com/in/fernandoike" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> Caiu a lista do PostgreSQL Brasil! E agora?</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">Apresentação da infraestrutura do PostgreSQL Brasil, as principais mudanças nos últimos anos e a motivação de mudar várias coisas (Invasão dos sites...)</p>
+      </li>
+      
+  
+    
+  
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="./img/speakers/diogo_rubert.jpg" alt="Diogo Luis Von Grafen Rubert" itemprop="image" />
+          </span>
+        
+
+        <h3 class="speakers-card">
+          <span class="speakers-name">Diogo Luis Von Grafen Rubert</span>
+          <span class="speakers-company">Logica Informática Ltda</span>
+          <span class="speakers-link">
+            
+            
+            
+            
+              <a href="https://br.linkedin.com/pub/diogo-l-v-g-rubert/a5/288/7" title="Linkedin" class="fa fa-linkedin-square"></a>
+            
+          </span>
+  
+          
+          <h3 class="speech-title">
+            <span> O USO DE FUNÇÕES DE SIMILARIDADE E DIST NCIA ENTRE STRINGS ADAPTADAS AO PORTUGUÊS BRASILEIRO</span>
+          </h3>
+          
+        </h3>
+
+        <p class="speakers-bio">As buscas que utilizam operadores relacionais são limitadas quando ocorrem erros de digitação ou quando a base de dados está inconsistente. Para suprir esta deficiência, alguns sistemas possuem funções que permitem fazer buscas baseadas na similaridade das strings, por exemplo, as buscas baseadas em algoritmos fonéticos como o Soundex e o Metaphone</p>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+    
   
   </ul>
 
 </section>
-<!-- / SPEAKERS -->
+<!-- \ SPEAKERS -->
 
         
+        
+          <!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+  <h2 class="section-title">Agenda</h2>
+  <p></p>
+
+  
+      <p>18/11</p>
+      <div class="schedule-tbl">
+        <table>
+          <thead>
+            <tr>
+              <th class="schedule-time">Time</th>
+              <th class="schedule-slot">Author</th>
+              <th class="schedule-title">Title</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">08:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Credenciamento</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">09:00</td>
+                        <td class="schedule-slot">Luis Fernando Bueno</td>
+                        <td class="schedule-description">Tutorial 1: Construção de banco de dados espaciais com PostGIS (Português)</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">12:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Almoço</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">14:00</td>
+                        <td class="schedule-slot">Oleg Bartunov e Teodor Sigaev</td>
+                        <td class="schedule-description">Tutorial 2: Author's introduction to Full-Text Search in PostgreSQL (Inglês)</td>
+                    </tr>
+                    
+                  
+              
+            
+          </tbody>
+        </table>
+      </div>
+      </br>
+  
+      <p>19/11</p>
+      <div class="schedule-tbl">
+        <table>
+          <thead>
+            <tr>
+              <th class="schedule-time">Time</th>
+              <th class="schedule-slot">Author</th>
+              <th class="schedule-title">Title</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">08:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Credenciamento</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">09:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Abertura Oficial</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">09:30</td>
+                        <td class="schedule-slot">Fabrízio de Royes Mello</td>
+                        <td class="schedule-description">Como posso colaborar com o PostgreSQL?</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">09:30</td>
+                        <td class="schedule-slot">Palestra Patrocinador Ouro</td>
+                        <td class="schedule-description">Palestra Patrocinador Ouro</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">10:30</td>
+                        <td class="schedule-slot">Teodor Sigaev / Oleg Bartunov</td>
+                        <td class="schedule-description">Author's view on Non-structured Data in PostgreSQL</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">12:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Almoço</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">14:00</td>
+                        <td class="schedule-slot">Fábio Telles Rodriguez</td>
+                        <td class="schedule-description">PostgreSQL Rock Star</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">14:00</td>
+                        <td class="schedule-slot">Luis Fernando Bueno</td>
+                        <td class="schedule-description">PostGIS Raster</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">15:00</td>
+                        <td class="schedule-slot">Euler Taveira</td>
+                        <td class="schedule-description">Big Data e PostgreSQL</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">15:00</td>
+                        <td class="schedule-slot">Sebastian Webber</td>
+                        <td class="schedule-description">Fique ninja na codificação de caracteres</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">16:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Intervalo</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">16:30</td>
+                        <td class="schedule-slot">Fabiano Machado Dias</td>
+                        <td class="schedule-description">Migração de Oracle para PostgreSQL - Indo além do SGBD</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">16:30</td>
+                        <td class="schedule-slot">Martín Marqués</td>
+                        <td class="schedule-description">BDR for DBAs</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">17:30</td>
+                        <td class="schedule-slot">Álvaro Herrera</td>
+                        <td class="schedule-description">A JSON representation of DDL</td>
+                    </tr>
+                    
+                  
+              
+            
+          </tbody>
+        </table>
+      </div>
+      </br>
+  
+      <p>20/11</p>
+      <div class="schedule-tbl">
+        <table>
+          <thead>
+            <tr>
+              <th class="schedule-time">Time</th>
+              <th class="schedule-slot">Author</th>
+              <th class="schedule-title">Title</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">09:00</td>
+                        <td class="schedule-slot">Martín Marqués</td>
+                        <td class="schedule-description">PostgreSQL backups strategies for real environments</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">09:00</td>
+                        <td class="schedule-slot">Guilherme Elias</td>
+                        <td class="schedule-description">Como o PostgreSQL ajuda a uMov.me a crescer</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">10:00</td>
+                        <td class="schedule-slot">Matheus Ricardo Espanhol</td>
+                        <td class="schedule-description">Escalabilidade, Sharding, Paralelismo e Bigdata com PostgreSQL? Yes, we can!</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">10:00</td>
+                        <td class="schedule-slot">Jaime Casanova</td>
+                        <td class="schedule-description">HA PostgreSQL cluster with repmgr and pgbouncer</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">10:00</td>
+                        <td class="schedule-slot">Miguel Di Ciurcio Filho</td>
+                        <td class="schedule-description">Administrando servidores PostgreSQL com Puppet</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">11:00</td>
+                        <td class="schedule-slot">Dickson S. Guedes</td>
+                        <td class="schedule-description">Curiosidades sobre o PostgreSQL que você (talvez) não sabia e se sabia vale a pena lembrar</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">11:00</td>
+                        <td class="schedule-slot">Juliano Atanazio</td>
+                        <td class="schedule-description">PostgreSQL + Python = Power!</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">11:00</td>
+                        <td class="schedule-slot">Anderson Abreu</td>
+                        <td class="schedule-description">Vamos baratear o custo com banco de dados? Migração para PostgreSQL de Oracle, MySQL, ZIM e MS SQL Server</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">12:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Almoço</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">14:00</td>
+                        <td class="schedule-slot">Fernando Ike</td>
+                        <td class="schedule-description">Caiu a lista do PostgreSQL Brasil! E agora?</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">14:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Future Indexing Mechanisms in PostgreSQL</td>
+                    </tr>
+                    
+                  
+              
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">14:00</td>
+                        <td class="schedule-slot">Diogo Luis Von Grafen Rubert</td>
+                        <td class="schedule-description">O USO DE FUNÇÕES DE SIMILARIDADE E DIST NCIA ENTRE STRINGS ADAPTADAS AO PORTUGUÊS BRASILEIRO</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">15:00</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Intervalo</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">15:30</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Fishbowl</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">16:30</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Lightning Talks</td>
+                    </tr>
+                    
+                  
+              
+            
+                
+                  
+                    
+                    <tr>
+                        <td class="schedule-time">17:20</td>
+                        <td class="schedule-slot"></td>
+                        <td class="schedule-description">Encerramento</td>
+                    </tr>
+                    
+                  
+              
+            
+          </tbody>
+        </table>
+      </div>
+      </br>
+  
+
+
+</section>
+
+<!-- / SCHEDULE -->
+
         
         
           <!-- PAST EVENTS -->

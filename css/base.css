@@ -7,11 +7,39 @@
   position:relative;
 }
 .content {padding: 50px 0;}
-.content section {padding-top: 50px;}
 
 /* =============================================================================
    BASIC STYLES
    ========================================================================== */
+* {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: .8em 0;
+}
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: .6em 0;
+}
+h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: .4em 0;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: .2em 0;
+}
+/*
 h2, h3, h4 {
   font-size: 5em;
   font-weight: normal;
@@ -19,7 +47,7 @@ h2, h3, h4 {
   letter-spacing: -.02em;
 }
 h3 {font-size: 4em;}
-h4 {font-size:3em;}
+h4 {font-size:3em;}*/
 p {
   font-size:1.6em;
   line-height:1.6em;
@@ -40,6 +68,7 @@ nav {
 }
 .nav-item {
   display: inline-block;
+  padding: .5em;
   margin-right:15px;
   vertical-align: middle;
 }
@@ -108,34 +137,63 @@ nav {
 }
 
 /* =============================================================================
+   REGISTRATION
+   ========================================================================== */
+.registration a {
+  display: inline-block;
+  font-size: 3em;
+  background-color: #ddd;
+  padding: .5em;
+  border-radius: 8px;
+}
+
+.registration p {
+  text-align: center;
+}
+
+/* =============================================================================
    SPEAKER
    ========================================================================== */
 .speakers-item {
   position:relative;
-  min-height:180px;
-  padding-left: 180px;
-  margin-bottom:30px;
+  margin: 40px 0;
+  min-height:140px;
+  padding: 0;
   border-bottom:1px dashed #e7e7e7;
 }
+.speakers-card {
+  font-size: 24px;
+}
+.speakers-card > * {
+  display: inline-block;
+}  
+.speakers-card > *:after {
+  content:" ::: ";
+  color: #ccc;
+}
+.speakers-card > *:last-child:after {
+  content:"";
+}
 .speaker-photo {
-  position:absolute;
-  top:0;
-  left:0;
+  float: left;
   display: block;
+  margin-right: 2.5em;
   width: 120px;
-  height: 120px;
+  height: 160px;
+}
+.speaker-photo .photo {
+  max-width: 120px;
+  max-height: 120px;
 }
 .speech-title {
-  padding-top:10px;
-  font-size:2em;
-  margin-bottom:1em;
+  line-height: 1.2;
+  margin: .5em;
 }
 .speech-time {
   font-size:18px;
   padding: 10px 15px;
   letter-spacing:-.03em;
 }
-.speakers-name{font-size:1.6em;}
 .speakers-item p {font-size:1.4em;}
 
 /* =============================================================================
@@ -175,6 +233,54 @@ nav {
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
+.schedule-list {
+  font-size: 12px;
+  padding: 1.5em;
+  border-collapse: collapse;
+}
+
+.schedule-list ul {
+  margin-left: 1em;
+}
+
+.schedule-item {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: .5em;
+  margin: .5em 0;
+}
+
+.schedule-item:hover {
+  background-color: #e4e4e4;
+}
+
+.schedule-slot, .schedule-name, .schedule-title {
+  float: left;
+  clear: both;
+  text-shadow: 1px 1px #fff;
+  margin: 4px 0;
+}
+
+.schedule-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+
+.schedule-title {
+  font-size: 1.5em;
+  color: #257C99;
+}
+
+.schedule-slot {
+  font-size: 1.2em;
+  color: #FFA500;
+} 
+
+.schedule-date, .schedule-time {
+  text-shadow: 1px 1px #ccc;
+}
+
 .schedule-tbl {padding:20px;}
 .schedule-tbl table {
   border-collapse: collapse;
@@ -201,20 +307,17 @@ nav {
   margin-right:20px;
 }
 .schedule-tbl .schedule-time {text-align:center;}
-.schedule-slot {
-  width: 250px;
-  font-size:16px;
-}
+/*
 .speakers-company {
   display: block;
   font-size:12px;
-}
+}*/
 
 /* =============================================================================
    SPONSORS  and  PARTNERS
    ========================================================================== */
 
-.sponsors-list {
+.sponsors-list, .partners-list {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -222,10 +325,19 @@ nav {
 .sponsor-item, .partner-item {
   display: inline-block;
   margin: 4px;
+  vertical-align: middle;
+}
+
+.partner-item {
+  width: 20%;
 }
 
 .sponsor-item .photo, .partner-item .photo{
   max-width: 100%;
+}
+
+.partner-item .photo{
+  height: 60px;
 }
 
 .sponsor-link, .partner-link {
@@ -236,20 +348,36 @@ nav {
   width: auto;
 }
 
-.sponsors-platinum .sponsor-item{
+.sponsors-platinum .sponsor-item {
   width: 80%;
+}
+
+.sponsors-platinum .photo {
+  max-height: 150px;
 }
 
 .sponsors-gold .sponsor-item {
   width: 49%;
 }
 
+.sponsors-gold .photo {
+  max-height: 100px;
+}
+
 .sponsors-silver .sponsor-item {
   width: 27%;
 }
 
+.sponsors-silver .photo {
+  max-height: 50px;
+}
+
 .sponsors-bronze .sponsor-item {
   width: 10%;
+}
+
+.sponsors-bronze .photo {
+  max-height: 25px;
 }
 
 .sponsor-plans-link {
@@ -290,11 +418,6 @@ nav {
 /* =============================================================================
    CONTATO
    ========================================================================== */
-.form-contato label{
-  font-size:16px;
-  display: block;
-  margin-bottom:.5em;
-}
 .control-group {
   height:auto;
   clear:both;
@@ -318,10 +441,47 @@ nav {
   padding:10px;
   font-size:14px;
 }
-.form-contato textarea {height:300px;}
-.form-contato .btn {float:right;}
 
 
+.contact p, .tourism p {
+  text-align: center;
+}
+
+.contact .fa, .tourism .fa {
+  font-size: 80px;
+  margin: 0 .2em;
+}
+
+/* =============================================================================
+   ACCOMMODATION
+   ========================================================================== */
+.condition-item {
+  display: list-item;
+  list-style: initial;
+  margin-left: 20px;
+}
+
+.accommodation-tbl {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: -20px;
+}
+
+.accommodation-header {
+  background-color: #ccc;
+}
+
+.accommodation-subheader {
+  background-color: #f4f4f4;
+}
+
+.accommodation-tbl td, .accommodation-tbl th {
+  padding: 10px;
+}
 
 /* =============================================================================
    Media Queries
@@ -367,6 +527,11 @@ nav {
   }
   .schedule-tbl td.schedule-description {font-size:12px;}
 
+  .schedule-tbl td.schedule-title {
+    font-size:12px;
+    white-space:nowrap;
+  }
+
   /* contact */
   .control-group-name, .control-group-email {
     clear:both;
@@ -374,7 +539,7 @@ nav {
     float:none;
     margin-right:0;
   }
-  .form-contato .btn {margin-bottom:50px;}
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -401,17 +566,21 @@ nav {
 
   /* content */
   .content {padding: 0;}
-  .content section {padding-top: 50px;}
+  /*.content section {padding-top: 50px;}*/
 
   /* speakers */
   .speakers-item {
-    min-height:70px;
-    padding-left: 70px;
   }
-  .speaker-photo {
-    width: 50px;
-    height: 50px;
+
+  .speakers-card > * {
+    display: block;
+    padding: 5px 0;
   }
+
+  .speakers-card > *:after {
+    content: "";
+  }
+
   .speech-title {
     padding-top:0;
     font-size:16px;
@@ -426,6 +595,15 @@ nav {
     float: none;
     width: 100%;
   }
+
+  .contact .fa, .tourism .fa {
+    font-size: 40px;
+  }
+
+  .partner-item .photo{
+    height: 30px;
+  }
+
 } 
 
 @media only screen and (max-width : 321px) {
